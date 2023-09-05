@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice form 1 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <h1> Formulaire de paiement </h1>
+        <h2> Informations de contact </h2>
+        <div id="Boite1">
+            <!-- Contenu de la premiere boite -->
+            <label for="nom"> Nom : </label>
+            <input type="text" name="nom" id="nom">
+
+            <label for="Courriel"> Courriel : </label>
+            <input type="email" name="Courriel" id="Courriel">
+
+            <label for="Province"> Province : </label>
+            <!-- La balise select est un menu avec plusieurs options qu'on peut choisir -->
+            <select name="Province" id="Province">
+                <option value="Quebec"> Quebec </option>
+                <option value="Manitoba"> Manitoba </option>
+                <option value="Alberta"> Alberta </option>
+                <option value="Ontario"> Ontario </option>
+                <option value="I-P-E"> I-P-E </option>
+            </select>
+        </div>
+
+        <!-- 2e Boite -->
+        <h2> Informations de paiement </h2>
+
+        <div id="Boite2">
+            <!-- Contenu de la boite 2 -->
+            <span id="Type"> Type de paiement </span>
+
+            <input type="radio" name="Visa" id="Visa" value="Visa">
+            <label for="Visa"> Visa </label>
+
+            <input type="radio" name="MasterCard" id="MasterCard" value="MasterCard">
+            <label for="MasterCard"> MasterCard </label>
+
+            <input type="radio" name="Amex" id="Amex" value="Amex">
+            <label for="Amex"> American Express </label>
+
+
+        </div>
+    </form>
+
+</body>
+</html>
